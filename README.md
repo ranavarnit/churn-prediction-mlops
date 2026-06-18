@@ -1,41 +1,35 @@
-# 🏦 Customer Churn Prediction with MLOps
+# Customer Churn Prediction with MLOps
 
 ## Overview
-End-to-end machine learning pipeline for predicting customer churn in telecom industry.
-Achieves **92% AUC** using XGBoost with automated MLflow tracking and FastAPI deployment.
+End-to-end ML pipeline for telecom churn prediction achieving **74.3% accuracy** on high-risk customers. Built with XGBoost, MLflow experiment tracking, and FastAPI deployment.
 
-## 🚀 Features
-- **Data Processing**: Automated feature engineering with 17 engineered features
-- **Model Training**: 4 algorithms compared (Logistic Regression, Random Forest, XGBoost, Gradient Boosting)
-- **Experiment Tracking**: MLflow integration for reproducible experiments
-- **Production API**: FastAPI deployment with &lt;100ms latency
-- **Containerization**: Docker support for easy deployment
+## Live Demo
+- API Docs: `http://localhost:8000/docs` (run locally)
+- MLflow UI: `http://localhost:5000` (run locally)
 
-## 🛠 Tech Stack
-- Python 3.9+
-- scikit-learn, XGBoost
-- MLflow
-- FastAPI, Uvicorn
-- Docker
+## Screenshots
+![API Prediction](screenshots/api_prediction.png)
+![Swagger UI](screenshots/swagger_docs.png)
+![MLflow Tracking](screenshots/mlflow_ui.png)
 
-## 📊 Results
-| Model | AUC | F1-Score | CV AUC |
-|-------|-----|----------|--------|
-| XGBoost | 0.92 | 0.85 | 0.91 |
-| Random Forest | 0.89 | 0.82 | 0.88 |
-| Gradient Boosting | 0.88 | 0.81 | 0.87 |
-| Logistic Regression | 0.82 | 0.75 | 0.80 |
+## Tech Stack
+- Python, scikit-learn, XGBoost
+- MLflow (experiment tracking)
+- FastAPI (production API)
+- Docker (containerization)
 
-## 🚀 Quick Start
+## Quick Start
 ```bash
-# Clone repository
-git clone https://github.com/ranavarnit/churn-prediction-mlops.git
-
-# Install dependencies
 pip install -r requirements.txt
+python project1_churn_prediction.py
+```
+## Results
+| Model               | AUC  | F1-Score |
+| ------------------- | ---- | -------- |
+| XGBoost             | 0.92 | 0.85     |
+| Random Forest       | 0.70 | 0.42     |
+| Gradient Boosting   | 0.88 | 0.81     |
+| Logistic Regression | 0.67 | 0.37     |
 
-# Run training pipeline
-python churn_prediction_pipeline.py
-
-# Start API server
-uvicorn churn_prediction_pipeline:app --reload
+## Author
+Varnit Rana | varnit10@gmail.com
