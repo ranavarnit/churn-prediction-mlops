@@ -29,7 +29,7 @@ Achieves **92% AUC** using XGBoost with automated MLflow tracking and FastAPI de
 ## 🚀 Quick Start
 ```bash
 # Clone repository
-git clone https://github.com/varnit-rana/churn-prediction-mlops.git
+git clone https://github.com/ranavarnit/churn-prediction-mlops.git
 
 # Install dependencies
 pip install -r requirements.txt
