@@ -10,7 +10,6 @@ End-to-end ML pipeline for telecom churn prediction achieving **74.3% accuracy**
 ## Screenshots
 ![API Prediction](screenshots/api_prediction.png)
 ![Swagger UI](screenshots/swagger_docs.png)
-![MLflow Tracking](screenshots/mlflow_ui.png)
 
 ## Tech Stack
 - Python, scikit-learn, XGBoost
