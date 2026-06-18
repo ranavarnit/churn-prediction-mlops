@@ -20,7 +20,7 @@ End-to-end ML pipeline for telecom churn prediction achieving **74.3% accuracy**
 ## Quick Start
 ```bash
 pip install -r requirements.txt
-python project1_churn_prediction.py
+python churn_prediction_pipeline.py
 ```
 ## Results
 | Model               | AUC  | F1-Score |
